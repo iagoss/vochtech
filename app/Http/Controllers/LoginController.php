@@ -42,5 +42,7 @@ class LoginController extends Controller
         $user->password = Hash::make(123);
         $user->save();
 
+        return response()->json(['teste' => 'Usuário teste criado com sucesso' ,$user]);
+
     }
 }
