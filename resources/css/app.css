@@ -1,0 +1,22 @@
+@tailwind base;
+
+form:not(.delete) {
+    @apply max-w-md w-full bg-white p-20 rounded-md shadow-md;
+}
+
+input, select {
+    @apply mb-5 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10;
+}
+
+input[type="submit"] {
+    @apply bg-indigo-700 text-white
+}
+
+th, td {
+    @apply px-6 py-3 text-center;
+}
+tr {
+    @apply odd:bg-white even:bg-gray-50 w-full;
+}
+@tailwind components;
+@tailwind utilities;
